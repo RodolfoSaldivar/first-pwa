@@ -10,7 +10,7 @@ workbox.routing.registerRoute(
 )
 
 workbox.routing.registerRoute(
-  new RegExp('http://.*:4567.*\.json'),
+  new RegExp('.*\.json'),
   workbox.strategies.networkFirst()
 )
 
