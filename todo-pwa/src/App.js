@@ -9,7 +9,7 @@ import GreyProfile from './grey_profile.png';
 import Back from './back.png';
 
 // const ITEMS_URL = "http://[YOUR LOCAL IP ADDRESS]:4567/items.json"
-const ITEMS_URL = 'http://localhost:4567/items.json';
+const ITEMS_URL = 'https://pwa-demo-walmart.herokuapp.com/items.json';
 
 function urlB64ToUint8Array(base64String) {
   const padding = '='.repeat((4 - (base64String.length % 4)) % 4);
