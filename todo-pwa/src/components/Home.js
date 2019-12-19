@@ -4,7 +4,8 @@ class Home extends Component {
 	render() {
 		return (
 			<div>
-				<input type="file" accept="image/*"/>
+				<input type="file" accept="image/*" capture />
+				asdfsfgd
 			</div>
 		);
 	}
