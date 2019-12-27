@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-	 "start": "node index.js",
-	 "react-start": "npm run start --prefix todo-pwa",
+    "start": "node index.js",
+    "react-start": "npm run start --prefix todo-pwa",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"npm run start\" \"npm run react-start\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix todo-pwa && npm run build --prefix todo-pwa"
@@ -13,9 +13,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4",
-    "uuid": "^3.3.2",
     "concurrently": "^4.1.0",
-    "nodemon": "^1.19.0"
+    "express": "^4.16.4",
+    "nodemon": "^1.19.0",
+    "prettier": "^1.19.1",
+    "uuid": "^3.3.2"
   }
 }

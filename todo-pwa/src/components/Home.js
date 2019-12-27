@@ -4,8 +4,13 @@ class Home extends Component {
 	render() {
 		return (
 			<div>
+				Direct Back Camera Access:
+				<br />
 				<input type="file" accept="image/*" capture />
-				asdfsfgd
+				<br /><br />
+				Image Options:
+				<br />
+				<input type="file" accept="image/*" />
 			</div>
 		);
 	}
