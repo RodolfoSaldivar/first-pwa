@@ -5,7 +5,7 @@ export default class QRScanner extends Component {
   constructor(props){
     super(props)
     this.state = {
-      delay: 100,
+      delay: 500,
       result: 'No result',
     }
  
@@ -28,11 +28,22 @@ export default class QRScanner extends Component {
  
     return(
       <div>
+        facingMode='user'
         <QrReader
           delay={this.state.delay}
           style={previewStyle}
           onError={this.handleError}
           onScan={this.handleScan}
+          facingMode='user'
+          />
+          -----------------------------------------------------------------
+        facingMode='environment'
+        <QrReader
+          delay={this.state.delay}
+          style={previewStyle}
+          onError={this.handleError}
+          onScan={this.handleScan}
+          facingMode='environment'
           />
         <p>{this.state.result}</p>
       </div>
