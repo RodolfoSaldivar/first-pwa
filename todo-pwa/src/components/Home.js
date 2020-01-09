@@ -28,13 +28,11 @@ export default class QRScanner extends Component {
  
     return(
       <div>
-        facingMode='environment'
         <QrReader
           delay={this.state.delay}
           style={previewStyle}
           onError={this.handleError}
           onScan={this.handleScan}
-          facingMode='environment'
           />
           -----------------------------------------------------------------
         {/*facingMode='environment'
