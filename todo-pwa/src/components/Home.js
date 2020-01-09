@@ -28,15 +28,6 @@ export default class QRScanner extends Component {
  
     return(
       <div>
-        facingMode='user'
-        <QrReader
-          delay={this.state.delay}
-          style={previewStyle}
-          onError={this.handleError}
-          onScan={this.handleScan}
-          facingMode='user'
-          />
-          -----------------------------------------------------------------
         facingMode='environment'
         <QrReader
           delay={this.state.delay}
@@ -45,6 +36,15 @@ export default class QRScanner extends Component {
           onScan={this.handleScan}
           facingMode='environment'
           />
+          -----------------------------------------------------------------
+        {/*facingMode='environment'
+                <QrReader
+                  delay={this.state.delay}
+                  style={previewStyle}
+                  onError={this.handleError}
+                  onScan={this.handleScan}
+                  facingMode='environment'
+                  />*/}
         <p>{this.state.result}</p>
       </div>
     )
